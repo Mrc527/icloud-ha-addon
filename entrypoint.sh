@@ -1,7 +1,8 @@
 #!/bin/bash
-
+echo "Starting..."
 # Check if config.json exists and parse it
 if [ -f /config/config.json ]; then
+    echo "found config.json"
     export PUID=$(jq -r '.options.PUID' /config/config.json)
     export PGID=$(jq -r '.options.PGID' /config/config.json)
     export TZ=$(jq -r '.options.TZ' /config/config.json)
@@ -9,6 +10,7 @@ if [ -f /config/config.json ]; then
 
 # Otherwise, check if config.yaml exists and parse it
 elif [ -f /config/config.yaml ]; then
+    echo "found config.yaml"
     export PUID=$(yq e '.options.PUID' /config/config.yaml)
     export PGID=$(yq e '.options.PGID' /config/config.yaml)
     export TZ=$(yq e '.options.TZ' /config/config.yaml)
