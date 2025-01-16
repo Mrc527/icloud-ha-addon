@@ -8,7 +8,7 @@ LABEL maintainer="Marco Visin <marco@visin.ch>"
 VOLUME ["/etc/timezone", "/etc/localtime"]
 
 # Install yq for YAML parsing
-RUN apk add --no-cache yq
+RUN apk add --no-cache yq jq
 
 # Copy the entrypoint script into the container
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
