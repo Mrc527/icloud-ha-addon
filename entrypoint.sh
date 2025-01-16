@@ -22,5 +22,9 @@ else
     exit 1
 fi
 
+# Print all environment variables
+echo "Environment Variables:"
+env
+
 # Execute the main process
 exec "/app/init.sh"
