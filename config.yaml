@@ -1,0 +1,27 @@
+name: "iCloud Drive"
+version: "0.0.3"
+slug: "icloud_drive"
+description: "Sync iCloud Drive via Docker container"
+icon: "https://www.icloud.com/icloud_logo/icloud_logo.png"
+url: "https://github.com/mrc527/icloud-ha-addon"
+arch:
+  - "amd64"
+#  - "armv7"
+#  - "armhf"
+  - "aarch64"
+startup: "services"
+boot: "auto"
+map:
+  - "config:rw"
+  - "share:rw"
+options:
+  PUID: 1000
+  PGID: 0
+  TZ: "Etc/UTC"
+  ENV_CONFIG_FILE_PATH: "/config/config.yaml"
+schema:
+  PUID: "int"
+  PGID: "int"
+  TZ: "str"
+  ENV_CONFIG_FILE_PATH: "str"
+init: false
