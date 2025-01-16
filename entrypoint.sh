@@ -18,7 +18,7 @@ elif [ -f /data/config.json ]; then
         export ENV_CONFIG_FILE_PATH=$(jq -r '.options.ENV_CONFIG_FILE_PATH' /data/config.json)
 else
     echo "No configuration file found. Please provide either config.json or config.yaml."
-    tail -f /config/config.json
+    tail -f /config/config.yaml
     exit 1
 fi
 
