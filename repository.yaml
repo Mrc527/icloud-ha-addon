@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
-name: Example Home Assistant add-on repository
+name: iCloud HomeAssistant Addon
 url: 'https://github.com/mrc527/icloud-ha-addon'
-maintainer: Awesome Maintainer <awesome@example.com>
+maintainer: Marco Visin <marco@visin.ch>
