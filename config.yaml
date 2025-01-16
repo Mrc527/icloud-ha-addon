@@ -1,5 +1,5 @@
 name: "iCloud Drive"
-version: "0.0.17"
+version: "0.0.18"
 slug: "icloud_drive"
 description: "Sync iCloud Drive via Docker container"
 icon: "https://www.icloud.com/icloud_logo/icloud_logo.png"

@@ -7,6 +7,8 @@ LABEL maintainer="Marco Visin <marco@visin.ch>"
 # Declare volumes so Docker knows these are external
 VOLUME ["/etc/timezone", "/etc/localtime"]
 
+RUN chown -R abc:911 /app/
+
 # Install yq for YAML parsing
 RUN apk add --no-cache yq jq
 
