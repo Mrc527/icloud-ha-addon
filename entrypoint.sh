@@ -21,4 +21,4 @@ else
 fi
 
 # Execute the main process
-exec "$@"
+exec "/app/init.sh"
